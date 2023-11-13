@@ -1,0 +1,35 @@
+{
+  "name": "aixkarepivot",
+  "version": "1.0.0",
+  "description": "Pivot app for AixKare Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "export TESTING=1 && export LEVEL=debug && node index.mjs",
+    "start": "export TESTING=0 && export LEVEL=release && sudo node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelahack1/Pivot.git"
+  },
+  "keywords": [
+    "aixkare",
+    "pivot",
+    "artecnologia"
+  ],
+  "author": "Angela Lopez Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelahack1/Pivot/issues"
+  },
+  "homepage": "https://github.com/angelahack1/Pivot#readme",
+  "dependencies": {
+    "aws-amplify": "^5.3.12",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "holderjs": "^2.9.9",
+    "moment": "^2.29.4",
+    "mongodb": "^6.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
