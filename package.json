@@ -4,8 +4,10 @@
   "description": "Pivot app for AixKare Applications",
   "main": "index.js",
   "scripts": {
-    "test": "export TESTING=1 && export LEVEL=debug && node index.mjs",
-    "start": "export TESTING=0 && export LEVEL=release && sudo node index.mjs"
+    "test_linux": "export TESTING=1 && export LEVEL=debug && node index.mjs",
+    "start_linux": "export TESTING=0 && export LEVEL=release && sudo node index.mjs",
+    "test_windows": "set TESTING=1 && set LEVEL=debug && node index.mjs",
+    "start_windows": "set TESTING=0 && set LEVEL=release && node index.mjs"
   },
   "repository": {
     "type": "git",
@@ -26,10 +28,10 @@
     "aws-amplify": "^5.3.12",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "graphql": "^16.8.1",
     "holderjs": "^2.9.9",
     "moment": "^2.29.4",
-    "mongodb": "^6.2.0",
-    "nodemon": "^3.0.1"
+    "mongodb": "^6.2.0"
   }
 }
